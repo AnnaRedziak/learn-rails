@@ -42,9 +42,6 @@ Rails.application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  # Suppress logger output for asset requests.
-  config.assets.quiet = true
-
 config.action_mailer.smtp_settings = {
 address: "smtp.sendgrid.net",
 port: 587,
@@ -60,6 +57,12 @@ config.action_mailer.delivery_method = :smtp
 config.action_mailer.raise_delivery_errors = true
 # Send email in development mode?
 config.action_mailer.perform_deliveries = true
+
+
+  # Suppress logger output for asset requests.
+  config.assets.quiet = true
+
+
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
