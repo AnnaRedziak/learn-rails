@@ -1,6 +1,8 @@
 class Contact
   include ActiveModel::Model
-  attr_accessor :name, :email, :content
+  attr_accessor :name, :string
+  attr_accessor :email, :string
+  attr_accessor :content, :string
 
   validates_presence_of :name
   validates_presence_of :email
